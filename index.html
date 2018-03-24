@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Student Management Portal</title>
+</head>
+
+<body>
+        <div class="container">
+            <div class="col-md-12">
+                    <div class="page-header" align="center">
+                        <h1>Student Details Management Portal</h1>
+                    </div>
+                </div>
+                <form>
+        
+        <div class="container" style="text-align:center">
+            <div class="btn-group ">
+                <input id="onclick" type="button" value="Delete" onclick="deleteRow()" class="btn btn-primary"/>
+                <input id="onclick" type="button" value="Edit" onclick="edit()" class="btn btn-primary"/>
+            </div>
+        </div>
+    </form>
+
+    <br/><br/>
+    <h3 class="first">Student Details:-</h3>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table" id="list">
+                <thead>
+                        <thead>
+                    <tr>
+                        <th class="bl">Student Name</th>
+                        <th class="bl">Roll No.</th>
+                        <th class="bl">Year</th>
+                        <th class="bl">Stream</th>
+                        <th> select</th>
+                   
+                    </tr>
+                </thead>
+                </thead>
+                <tbody id = "tableid">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="flex-container" name = "forms">
+            <div class="col-md-12" id="div1">
+                    <div class="form-group">
+                            <label >Enter The student Name</font></label>
+                            <input class="form-control" type=text id="name" required/>
+                        </div>
+            <div class="form-group">
+                <label>Enter The Roll No.</label>
+                <input class="form-control" type=number id="rollno" required/>
+            </div>
+            <div class="form-group">
+                <label >Enter the Passout Year:</font></label>
+                <input class="form-control"  type=number id="year" required/>
+            </div>
+            <div class="form-group">
+                <label >Enter the Stream:</font></label>
+                <input class="form-control" type=text id="stream" required/>
+            </div>
+            
+            <input id="onclick" type="button" value="Add" onclick="input_data()" class="btn btn-primary"/>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
